@@ -1,0 +1,11 @@
+﻿  C++ LearnProject.cpp
+D:\LearnC++\LearnC-\C++ LearnProject\pentagonal.h(11,12): warning C4244: “=”: 从“int64_t”转换到“int”，可能丢失数据
+  pentagonal.cpp
+D:\LearnC++\LearnC-\C++ LearnProject\pentagonal.h(11,12): warning C4244: “=”: 从“int64_t”转换到“int”，可能丢失数据
+D:\LearnC++\LearnC-\C++ LearnProject\pentagonal.cpp(7,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\LearnC++\LearnC-\C++ LearnProject\pentagonal.cpp(41,26): warning C4018: “<”: 有符号/无符号不匹配
+D:\LearnC++\LearnC-\C++ LearnProject\pentagonal.cpp(118,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\LearnC++\LearnC-\C++ LearnProject\pentagonal.cpp(132,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\LearnC++\LearnC-\C++ LearnProject\pentagonal.cpp(146,23): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+  C++ LearnProject.vcxproj -> D:\LearnC++\LearnC-\C++ LearnProject\Debug\C++ LearnProject.exe
