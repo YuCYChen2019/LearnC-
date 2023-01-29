@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <functional>
 using namespace std;
 
 inline bool PentagonalValueValid(int Index,int& result) {
@@ -42,3 +43,21 @@ int max(const int* a, int size);
 float max(const float* a, int size);
 string max(const string* a, int size);
 
+template<typename InputIterator,typename OutputIterator,typename ElemType,typename Comp>
+OutputIterator Filter(InputIterator first,InputIterator last,OutputIterator at,const ElemType &Val,Comp pred) {
+	while ((first = find_if(first,last,bind2nd(pred,Val)))!=last)
+	{
+		cout << "found value: " << *first << endl;
+		*at++ = *first++;
+	}
+	return at;
+}
+
+template<typename InputIterator,typename OutputIterator,typename ElemType, typename Comp>
+OutputIterator Sub_Vec(InputIterator first, InputIterator last, OutputIterator at, OutputIterator end, const ElemType& Val, Comp pred) {
+	copy(first, last, at);
+	end = at + (last - first);
+	sort(at, end, pred);
+	end = find_if(at, end, bind2nd(pred, Val));
+	return at;
+}
