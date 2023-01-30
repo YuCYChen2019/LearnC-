@@ -4,27 +4,22 @@
 #include <iostream>
 #include <vector>
 #include "pentagonal.h"
+#include "AlgorithmTest.h"
+#include "Stack.h"
 using namespace std;
+
+
+map<string, int> map_WordCount;
+set<string> set_WordOutOfRange{ "a", "an", "or", "the", "and", "but", "because" };
 
 int main()
 {
-    //std::cout << "Hello World!\n";
-    //vector<int> tmpVec{0,11,25,748,45,6};
-   
-    const int elem_size = 8;
-    int ia[elem_size] = { 12,8,43,0,6,21,3,7 };
-    vector<int> ivec(ia, ia + elem_size);
+    Stack stackTest;
 
-    int ia2[elem_size];
-    vector<int> ivec2(elem_size);
-    
-    Sub_Vec(ia, ia + elem_size, ia2, ia2 + elem_size, elem_size, greater<int>());
-    
-    for (size_t i = 0; i < elem_size; i++)
-    {
-        cout << ia2[i]<<" ";
-    }
-    cout << endl;
+    stackTest.push("happy");
+    stackTest.push("sad");
+
+
 
 }
 

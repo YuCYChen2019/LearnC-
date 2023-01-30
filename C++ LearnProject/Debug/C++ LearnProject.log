@@ -1,3 +1,5 @@
 ﻿  C++ LearnProject.cpp
 D:\LearnC++\LearnC-\C++ LearnProject\pentagonal.h(12,12): warning C4244: “=”: 从“int64_t”转换到“int”，可能丢失数据
+  Stack.cpp
+  正在生成代码...
   C++ LearnProject.vcxproj -> D:\LearnC++\LearnC-\C++ LearnProject\Debug\C++ LearnProject.exe
